@@ -75,7 +75,7 @@
 &kp ESCAPE            &kp Q             &kp W             &kp E        &kp R      &kp T                  &kp Y            &kp U  &kp I      &kp O    &kp P      &kp MINUS
 &mt LCTRL LANGUAGE_2  &kp A             &kp S             &kp D        &kp F      &kp G                  &kp H            &kp J  &kp K      &kp L    &kp SEMI   &kp SQT
 &mt LEFT_SHIFT TAB    &kp Z             &kp X             &kp C        &kp V      &kp B                  &kp N            &kp M  &kp COMMA  &kp DOT  &kp SLASH  &mt RIGHT_SHIFT DELETE
-&mt LALT HOME         &mt LS(LWIN) END  &lt 5 LANGUAGE_1  &lt 1 SPACE  &lt 4 TAB             &kp RETURN  &lt 3 BACKSPACE                                        &lt 2 BACKSLASH
+&mt LALT HOME         &mt LEFT_GUI END  &lt 5 LANGUAGE_1  &lt 1 SPACE  &lt 4 TAB             &kp RETURN  &lt 3 BACKSPACE                                        &lt 2 BACKSLASH
             >;
         };
 
