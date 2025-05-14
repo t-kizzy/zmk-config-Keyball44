@@ -38,7 +38,7 @@ layers:
   - {t: /, s: '?'}
   - {t: '$$mdi:backspace-reverse-outline$$', h: '$$mdi:apple-keyboard-shift$$'}
   - {t: HOME, h: '$$mdi:apple-keyboard-option$$'}
-  - {t: END, h: Sft+LWIN}
+  - {t: END, h: '$$mdi:apple-keyboard-command$$'}
   - {t: LANGUAGE 1, h: SCROLL}
   - {t: '$$mdi:keyboard-space$$', h: NUM}
   - {t: '$$mdi:keyboard-tab$$', h: MOUSE}
