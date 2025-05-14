@@ -1,7 +1,7 @@
 layout: {zmk_keyboard: keyball44}
 layers:
   QWRT:
-  - {t: '$$mdi:keyboard-esc$$', h: '$$mdi:apple-keyboard-command$$'}
+  - $$mdi:keyboard-esc$$
   - Q
   - W
   - E
@@ -38,12 +38,12 @@ layers:
   - {t: /, s: '?'}
   - {t: '$$mdi:backspace-reverse-outline$$', h: '$$mdi:apple-keyboard-shift$$'}
   - {t: HOME, h: '$$mdi:apple-keyboard-option$$'}
-  - {t: END, h: Sft+END}
+  - {t: END, h: Sft+LWIN}
   - {t: LANGUAGE 1, h: SCROLL}
   - {t: '$$mdi:keyboard-space$$', h: NUM}
   - {t: '$$mdi:keyboard-tab$$', h: MOUSE}
-  - {t: '$$mdi:keyboard-return$$', h: FUN}
-  - {t: '$$mdi:backspace$$', h: NUM}
+  - RETURN
+  - {t: '$$mdi:backspace$$', h: FUN}
   - {t: \, h: SYM, s: '|'}
   NUM:
   - {t: '$$mdi:minus-circle-outline$$', type: none}
@@ -88,7 +88,7 @@ layers:
   - {type: held}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-  - {t: KP 0, type: held alternate}
+  - KP 0
   - {t: '$$mdi:transfer$$', type: trans}
   SYM:
   - {t: '$$mdi:minus-circle-outline$$', type: none}
@@ -177,8 +177,8 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-  - {type: held}
   - {t: '$$mdi:transfer$$', type: trans}
+  - {type: held}
   - F12
   MOUSE:
   - {t: '$$mdi:minus-circle-outline$$', type: none}
