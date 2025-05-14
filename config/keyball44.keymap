@@ -94,7 +94,7 @@
             bindings = <
 &none   &none       &none         &none         &none         &none               &none    &none    &none   &kp LA(F11)  &kp PRINTSCREEN  &kp RC(PAUSE_BREAK)
 &none   &bt BT_CLR  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &trans              &none    &none    &none   &none        &none            &none
-&none   &trans      &trans        &trans        &trans        &trans              &macro1  &macro2  &trans  &trans       &none            &none
+&none   &trans      &trans        &trans        &trans        &trans              &macro1  &macro2  &trans  &trans       &none            &kp LA(LC(DELETE))
 &trans  &trans      &trans        &trans        &trans                    &trans  &trans                                                  &trans
             >;
         };
