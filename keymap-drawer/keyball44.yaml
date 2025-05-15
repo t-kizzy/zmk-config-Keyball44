@@ -12,7 +12,7 @@ layers:
   - I
   - O
   - P
-  - {t: '-', s: _}
+  - {t: '$$mdi:backspace$$', type: backspace}
   - {t: LANGUAGE 2, h: '$$mdi:apple-keyboard-control$$'}
   - A
   - S
@@ -24,7 +24,7 @@ layers:
   - K
   - L
   - {t: ;, s: ':'}
-  - {t: '''', s: '"'}
+  - RETURN
   - {t: '$$mdi:keyboard-tab$$', h: '$$mdi:apple-keyboard-shift$$'}
   - Z
   - X
@@ -41,9 +41,9 @@ layers:
   - {t: END, h: '$$mdi:apple-keyboard-command$$'}
   - {t: LANGUAGE 1, h: SCROLL}
   - {t: '$$mdi:keyboard-space$$', h: NUM}
-  - MOUSE
-  - RETURN
-  - {t: '$$mdi:backspace$$', h: FUN}
+  - {t: '-', h: MOUSE, s: _}
+  - {t: ., h: NUM}
+  - {t: '$$mdi:keyboard-space$$', h: FUN}
   - {t: \, h: SYM, s: '|'}
   NUM:
   - {t: '$$mdi:minus-circle-outline$$', type: none}
@@ -87,7 +87,7 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {type: held}
   - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
+  - {type: held alternate}
   - KP 0
   - {t: '$$mdi:transfer$$', type: trans}
   SYM:
