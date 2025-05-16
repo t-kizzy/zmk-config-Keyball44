@@ -13,7 +13,7 @@ layers:
   - O
   - P
   - {t: '-', s: _}
-  - {t: Alt+`, h: '$$mdi:apple-keyboard-control$$', s: Alt+~}
+  - {t: LANGUAGE 2, h: '$$mdi:apple-keyboard-control$$'}
   - A
   - S
   - D
@@ -24,7 +24,7 @@ layers:
   - K
   - L
   - {t: ;, s: ':'}
-  - RETURN
+  - .
   - {t: '$$mdi:keyboard-tab$$', h: '$$mdi:apple-keyboard-shift$$'}
   - Z
   - X
@@ -39,11 +39,11 @@ layers:
   - {t: '$$mdi:backspace-reverse-outline$$', h: '$$mdi:apple-keyboard-shift$$'}
   - {t: HOME, h: '$$mdi:apple-keyboard-option$$'}
   - {t: END, h: '$$mdi:apple-keyboard-command$$'}
-  - {t: '=', h: SCROLL, s: +}
+  - {t: LANGUAGE 1, h: SCROLL}
   - {t: '$$mdi:keyboard-space$$', h: NUM}
-  - {t: ., h: MOUSE}
+  - MOUSE
+  - {t: RETURN, h: FUN}
   - {t: '$$mdi:backspace$$', h: NUM}
-  - {t: '$$mdi:keyboard-space$$', h: FUN}
   - {t: \, h: SYM, s: '|'}
   NUM:
   - {t: '$$mdi:minus-circle-outline$$', type: none}
@@ -87,8 +87,8 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {type: held}
   - {t: '$$mdi:transfer$$', type: trans}
-  - {type: held alternate}
-  - KP 0
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: KP 0, type: held alternate}
   - {t: '$$mdi:transfer$$', type: trans}
   SYM:
   - {t: '$$mdi:minus-circle-outline$$', type: none}
@@ -147,7 +147,7 @@ layers:
   - F8
   - F9
   - F10
-  - {t: '$$mdi:backspace$$', type: backspace}
+  - F11
   - {t: Sft+`, s: Sft+~}
   - '!'
   - '@'
@@ -170,15 +170,15 @@ layers:
   - '}'
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - F11
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: Sft+=, s: Sft++}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
   - {type: held}
+  - {t: '$$mdi:transfer$$', type: trans}
   - F12
   MOUSE:
   - {t: '$$mdi:minus-circle-outline$$', type: none}
