@@ -6,12 +6,6 @@
  
 #include "keyball44.dtsi"
 
-#include <input/processors.dtsi>
-#define MOUSE 4 
-&mkp_input_listener {
-    input-processors = <&zip_temp_layer MOUSE 250>;
-};
-
 &default_transform {
     col-offset = <6>;
 };
