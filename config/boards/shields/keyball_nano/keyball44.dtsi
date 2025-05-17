@@ -2,11 +2,6 @@
 #include <physical_layouts.dtsi>
 #include <input/processors.dtsi>
 
-#define MOUSE 4 
-&mkp_input_listener {
-    input-processors = <&zip_temp_layer MOUSE 250>;
-};
-
 / {
     chosen {
         zephyr,display = &oled;
