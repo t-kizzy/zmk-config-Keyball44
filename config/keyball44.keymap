@@ -24,6 +24,7 @@
 
 &mt {
     //tapping-term-ms = <200>;
+
     tapping-term-ms = <180>;
     flavor = "tap-preferred";
     quick-tap-ms = <150>;
@@ -90,10 +91,10 @@
         default_layer {
             label = "QWRT";
             bindings = <
-&kp ESCAPE             &kp Q             &kp W             &kp E        &kp R      &kp T                       &kp Y         &kp U  &kp I      &kp O    &kp P      &kp MINUS
-&mt LSHIFT LANGUAGE_2  &kp A             &kp S             &kp D        &kp F      &kp G                       &kp H         &kp J  &kp K      &kp L    &kp SEMI   &kp APOS
-&kp LCTRL              &kp Z             &kp X             &kp C        &kp V      &kp B                       &kp N         &kp M  &kp COMMA  &kp DOT  &kp SLASH  &mt RIGHT_SHIFT DELETE
-&mt LGUI HOME          &mt LEFT_ALT END  &lt 5 LANGUAGE_1  &lt 1 SPACE  &lt 4 TAB             &lt 3 BACKSPACE  &lt 1 RETURN                                        &lt 2 BACKSLASH
+&lt 4 ESCAPE           &kp Q             &kp W             &kp E        &kp R       &kp T                     &kp Y         &kp U  &kp I      &kp O    &kp P      &kp MINUS
+&mt LSHIFT LANGUAGE_2  &kp A             &kp S             &kp D        &kp F       &kp G                     &kp H         &kp J  &kp K      &kp L    &kp SEMI   &kp APOS
+&mt LCTRL TAB          &kp Z             &kp X             &kp C        &kp V       &kp B                     &kp N         &kp M  &kp COMMA  &kp DOT  &kp SLASH  &mt RIGHT_SHIFT BACKSLASH
+&mt LGUI HOME          &mt LEFT_ALT END  &lt 5 LANGUAGE_1  &lt 1 SPACE  &kp DELETE             &kp BACKSPACE  &lt 3 RETURN                                        &lt 2 GRAVE
             >;
         };
 
