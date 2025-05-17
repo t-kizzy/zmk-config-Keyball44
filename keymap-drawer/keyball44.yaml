@@ -42,8 +42,8 @@ layers:
   - {t: LANGUAGE 1, h: SCROLL}
   - {t: '$$mdi:keyboard-space$$', h: NUM}
   - {t: '$$mdi:keyboard-tab$$', h: MOUSE}
-  - {t: RETURN, h: FUN}
-  - {t: '$$mdi:backspace$$', h: NUM}
+  - {t: '$$mdi:backspace$$', h: FUN}
+  - {t: RETURN, h: NUM}
   - {t: \, h: SYM, s: '|'}
   NUM:
   - {t: '$$mdi:minus-circle-outline$$', type: none}
