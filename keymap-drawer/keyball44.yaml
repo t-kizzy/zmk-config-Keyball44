@@ -42,8 +42,8 @@ layers:
   - {t: LANGUAGE 1, h: SCROLL}
   - {t: '$$mdi:keyboard-space$$', h: NUM}
   - $$mdi:backspace-reverse-outline$$
-  - {t: '$$mdi:backspace$$', type: backspace}
-  - {t: RETURN, h: FUN}
+  - RETURN
+  - {t: '$$mdi:backspace$$', h: FUN}
   - {t: '`', h: SYM, s: '~'}
   NUM:
   - {t: '$$mdi:minus-circle-outline$$', type: none}
