@@ -1,7 +1,7 @@
 layout: {zmk_keyboard: keyball44}
 layers:
   QWRT:
-  - $$mdi:keyboard-esc$$
+  - {t: '$$mdi:keyboard-esc$$', h: MOUSE}
   - Q
   - W
   - E
@@ -25,7 +25,7 @@ layers:
   - L
   - {t: ;, s: ':'}
   - .
-  - $$mdi:apple-keyboard-control$$
+  - {t: '$$mdi:keyboard-tab$$', h: '$$mdi:apple-keyboard-control$$'}
   - Z
   - X
   - C
@@ -36,15 +36,15 @@ layers:
   - {t: ',', s: <}
   - {t: ., s: '>'}
   - {t: /, s: '?'}
-  - {t: '$$mdi:backspace-reverse-outline$$', h: '$$mdi:apple-keyboard-shift$$'}
+  - {t: \, h: '$$mdi:apple-keyboard-shift$$', s: '|'}
   - {t: HOME, h: LGUI}
   - {t: END, h: '$$mdi:apple-keyboard-option$$'}
   - {t: LANGUAGE 1, h: SCROLL}
   - {t: '$$mdi:keyboard-space$$', h: NUM}
-  - {t: '$$mdi:keyboard-tab$$', h: MOUSE}
-  - {t: '$$mdi:backspace$$', h: FUN}
-  - {t: RETURN, h: NUM}
-  - {t: \, h: SYM, s: '|'}
+  - $$mdi:backspace-reverse-outline$$
+  - {t: '$$mdi:backspace$$', type: backspace}
+  - {t: RETURN, h: FUN}
+  - {t: '`', h: SYM, s: '~'}
   NUM:
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
@@ -88,7 +88,7 @@ layers:
   - {type: held}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-  - {t: KP 0, type: held alternate}
+  - KP 0
   - {t: '$$mdi:transfer$$', type: trans}
   SYM:
   - {t: '$$mdi:minus-circle-outline$$', type: none}
@@ -177,11 +177,11 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-  - {type: held}
   - {t: '$$mdi:transfer$$', type: trans}
+  - {type: held}
   - F12
   MOUSE:
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - {t: '$$mdi:minus-circle-outline$$', type: held}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
@@ -221,7 +221,7 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-  - {type: held}
+  - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
