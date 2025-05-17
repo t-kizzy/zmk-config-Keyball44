@@ -60,6 +60,11 @@
     };
 };
 
+#define MOUSE 4 
+&mkp_input_listener {
+    input-processors = <&zip_temp_layer MOUSE 250>;
+};
+
 / {
   trackball_listener {
     compatible = "zmk,input-listener";
