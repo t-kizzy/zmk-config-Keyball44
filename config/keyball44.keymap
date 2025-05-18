@@ -90,7 +90,7 @@
 
         Combo_Tab {
             bindings = <&kp TAB>;
-            key-positions = <24 25>;
+            key-positions = <24 12>;
             layers = <0>;
         };
     };
