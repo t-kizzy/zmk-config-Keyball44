@@ -25,7 +25,7 @@ layers:
   - L
   - {t: ;, s: ':'}
   - {t: '=', h: '$$mdi:apple-keyboard-shift$$', s: +}
-  - {t: '$$mdi:keyboard-tab$$', h: '$$mdi:apple-keyboard-control$$'}
+  - $$mdi:apple-keyboard-control$$
   - Z
   - X
   - C
@@ -44,7 +44,7 @@ layers:
   - {t: '$$mdi:backspace-reverse-outline$$', h: FUN}
   - RETURN
   - {t: '$$mdi:backspace$$', h: FUN}
-  - {t: \, h: SYM, s: '|'}
+  - {t: '$$mdi:keyboard-tab$$', h: SYM}
   NUM:
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
@@ -159,7 +159,7 @@ layers:
   - '*'
   - (
   - )
-  - {t: '=', s: +}
+  - {t: \, s: '|'}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
@@ -171,7 +171,7 @@ layers:
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - {t: Sft+=, s: Sft++}
+  - {t: Sft+\, s: Sft+|}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
