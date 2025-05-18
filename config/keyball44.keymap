@@ -85,6 +85,16 @@
         };
     };
 
+    combos {
+        compatible = "zmk,combos";
+
+        Combo_Tab {
+            bindings = <&kp TAB>;
+            key-positions = <24 25>;
+            layers = <0>;
+        };
+    };
+
     keymap {
         compatible = "zmk,keymap";
 
