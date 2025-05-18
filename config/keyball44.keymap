@@ -93,8 +93,8 @@
             bindings = <
 &lt 4 ESCAPE          &kp Q             &kp W             &kp E        &kp R         &kp T                  &kp Y            &kp U  &kp I      &kp O    &kp P      &kp MINUS
 &mt LSHFT LANGUAGE_2  &kp A             &kp S             &kp D        &kp F         &kp G                  &kp H            &kp J  &kp K      &kp L    &kp SEMI   &mt RSHIFT EQUAL
-&mt LCTRL TAB         &kp Z             &kp X             &kp C        &kp V         &kp B                  &kp N            &kp M  &kp COMMA  &kp DOT  &kp SLASH  &mt RCTRL APOS
-&mt LGUI HOME         &mt LEFT_ALT END  &lt 5 LANGUAGE_1  &lt 1 SPACE  &lt 3 DELETE             &kp RETURN  &lt 3 BACKSPACE                                        &lt 2 BACKSLASH
+&kp LCTRL             &kp Z             &kp X             &kp C        &kp V         &kp B                  &kp N            &kp M  &kp COMMA  &kp DOT  &kp SLASH  &mt RCTRL APOS
+&mt LGUI HOME         &mt LEFT_ALT END  &lt 5 LANGUAGE_1  &lt 1 SPACE  &lt 3 DELETE             &kp RETURN  &lt 3 BACKSPACE                                        &lt 2 TAB
             >;
         };
 
@@ -122,8 +122,8 @@
             label = "FUN";
             bindings = <
 &kp GRAVE      &kp F1    &kp F2  &kp F3    &kp F4            &kp F5                         &kp F6          &kp F7           &kp F8     &kp F9                &kp F10                &kp F11
-&kp LS(GRAVE)  &kp EXCL  &kp AT  &kp HASH  &kp DOLLAR        &kp PERCENT                    &kp CARET       &kp AMPERSAND    &kp ASTRK  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp EQUAL
-&none          &none     &none   &none     &kp LEFT_BRACKET  &kp RIGHT_BRACKET              &kp LEFT_BRACE  &kp RIGHT_BRACE  &none      &none                 &none                  &kp RS(EQUAL)
+&kp LS(GRAVE)  &kp EXCL  &kp AT  &kp HASH  &kp DOLLAR        &kp PERCENT                    &kp CARET       &kp AMPERSAND    &kp ASTRK  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp BACKSLASH
+&none          &none     &none   &none     &kp LEFT_BRACKET  &kp RIGHT_BRACKET              &kp LEFT_BRACE  &kp RIGHT_BRACE  &none      &none                 &none                  &kp RS(BACKSLASH)
 &trans         &trans    &trans  &trans    &trans                                   &trans  &trans                                                                                   &kp F12
             >;
         };
