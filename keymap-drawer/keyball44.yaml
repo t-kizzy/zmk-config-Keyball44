@@ -24,7 +24,7 @@ layers:
   - K
   - L
   - {t: ;, s: ':'}
-  - {t: ., h: '$$mdi:apple-keyboard-shift$$'}
+  - {t: '=', h: '$$mdi:apple-keyboard-shift$$', s: +}
   - {t: '$$mdi:keyboard-tab$$', h: '$$mdi:apple-keyboard-control$$'}
   - Z
   - X
@@ -36,7 +36,7 @@ layers:
   - {t: ',', s: <}
   - {t: ., s: '>'}
   - {t: /, s: '?'}
-  - {t: '=', h: '$$mdi:apple-keyboard-control$$', s: +}
+  - {t: ., h: '$$mdi:apple-keyboard-control$$'}
   - {t: HOME, h: LGUI}
   - {t: END, h: '$$mdi:apple-keyboard-option$$'}
   - {t: LANGUAGE 1, h: SCROLL}
