@@ -315,7 +315,3 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-combos:
-- p: [24, 12]
-  k: $$mdi:keyboard-tab$$
-  l: [QWRT]
