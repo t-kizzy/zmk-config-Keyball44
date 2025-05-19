@@ -66,7 +66,7 @@
         macro2: macro2 {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp N0 &kp N7 &kp N4 &kp N8 &kp N7 &kp N7 &kp N5 &kp N9>;
+            bindings = <&kp N0 &kp N7 &kp N4 &kp N8 &kp N7 &kp N7 &kp N5 &kp N9 &kp LS(B) &kp I &kp Y &kp O &kp U &kp G &kp A &kp RET>;
             label = "MACRO2";
         };
 
@@ -85,15 +85,7 @@
         };
     };
 
-    combos {
-        compatible = "zmk,combos";
-
-        Combo_Tab {
-            bindings = <&kp TAB>;
-            key-positions = <24 12>;
-            layers = <0>;
-        };
-    };
+    combos { compatible = "zmk,combos"; };
 
     keymap {
         compatible = "zmk,keymap";
