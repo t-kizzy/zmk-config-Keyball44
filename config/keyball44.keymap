@@ -70,10 +70,15 @@
             label = "MACRO2";
         };
 
-        Mouse_macro1: Mouse_macro1 {
+        Mouse_double: Mouse_macro1 {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&mkp LCLK &to 0>;
+            bindings =
+                <&mkp LCLK>,
+                <&macro_wait_time 100>,
+                <&mkp LCLK>,
+                <&macro_wait_time 100>;
+
             label = "MOUSE_MACRO1";
         };
 
@@ -93,10 +98,10 @@
         default_layer {
             label = "QWRT";
             bindings = <
-&lt 4 ESCAPE    &kp Q             &kp W            &kp E        &kp R         &kp T               &kp Y            &kp U  &kp I      &kp O    &kp P      &kp MINUS
-&kp LCTRL       &kp A             &kp S            &kp D        &kp F         &kp G               &kp H            &kp J  &kp K      &kp L    &kp SEMI   &mt RCTRL EQUAL
-&mt LSHIFT TAB  &kp Z             &kp X            &kp C        &kp V         &kp B               &kp N            &kp M  &kp COMMA  &kp DOT  &kp SLASH  &mt RSHIFT APOS
-&mt LGUI HOME   &mt LEFT_ALT END  &lt 5 LA(GRAVE)  &lt 1 SPACE  &lt 3 DELETE             &kp RET  &lt 3 BACKSPACE                                        &lt 2 BACKSLASH
+&lt 4 ESCAPE          &kp Q             &kp W            &kp E        &kp R         &kp T               &kp Y            &kp U  &kp I      &kp O    &kp P      &kp MINUS
+&mt LCTRL LANGUAGE_2  &kp A             &kp S            &kp D        &kp F         &kp G               &kp H            &kp J  &kp K      &kp L    &kp SEMI   &mt RCTRL EQUAL
+&mt LSHIFT TAB        &kp Z             &kp X            &kp C        &kp V         &kp B               &kp N            &kp M  &kp COMMA  &kp DOT  &kp SLASH  &mt RSHIFT APOS
+&mt LGUI HOME         &mt LEFT_ALT END  &lt 5 LA(GRAVE)  &lt 1 SPACE  &lt 3 DELETE             &kp RET  &lt 3 BACKSPACE                                        &lt 2 BACKSLASH
             >;
         };
 
@@ -133,10 +138,10 @@
         mouse_layer {
             label = "MOUSE";
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans              &trans         &trans     &trans  &trans     &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans              &kp PAGE_UP    &mkp LCLK  &trans  &mkp RCLK  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans              &kp PAGE_DOWN  &trans     &trans  &trans     &trans  &trans
-&trans  &trans  &trans  &trans  &trans              &trans  &trans                                               &trans
+&trans  &trans  &trans  &trans  &trans  &trans              &trans         &trans     &trans         &trans     &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans              &kp PAGE_UP    &mkp LCLK  &Mouse_double  &mkp RCLK  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans              &kp PAGE_DOWN  &trans     &trans         &trans     &trans  &trans
+&trans  &trans  &trans  &trans  &trans              &trans  &trans                                                      &trans
             >;
         };
 
