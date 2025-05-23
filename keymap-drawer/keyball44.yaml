@@ -13,7 +13,7 @@ layers:
   - O
   - P
   - {t: '-', s: _}
-  - $$mdi:apple-keyboard-control$$
+  - {t: LANGUAGE 2, h: '$$mdi:apple-keyboard-control$$'}
   - A
   - S
   - D
@@ -201,7 +201,7 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - PgUp
   - $$mdi:mouse-left-click-outline$$
-  - {t: '$$mdi:transfer$$', type: trans}
+  - '&Mouse_double'
   - $$mdi:mouse-right-click-outline$$
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
