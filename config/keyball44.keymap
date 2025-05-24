@@ -118,10 +118,10 @@
         symbol_layer {
             label = "SYM";
             bindings = <
-&none            &none       &none         &none         &none         &none              &none    &none    &none  &trans  &kp RA(F11)  &kp RC(PAUSE_BREAK)
-&none            &bt BT_CLR  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &none              &none    &none    &none  &none   &none        &none
-&none            &none       &none         &none         &none         &none              &macro1  &macro2  &none  &none   &none        &kp LA(LC(DELETE))
-&kp PRINTSCREEN  &none       &trans        &trans        &trans                   &trans  &trans                                        &trans
+&none  &none       &none         &none         &none         &none              &none    &none    &none  &none  &kp RA(F11)  &kp RC(PAUSE_BREAK)
+&none  &bt BT_CLR  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &none              &none    &none    &none  &none  &none        &none
+&none  &none       &none         &none         &none         &none              &macro1  &macro2  &none  &none  &none        &kp LA(LC(DELETE))
+&none  &none       &trans        &trans        &trans                   &trans  &trans                                       &trans
             >;
         };
 
@@ -129,8 +129,8 @@
             label = "FUN";
             bindings = <
 &kp GRAVE      &kp F1    &kp F2  &kp F3    &kp F4            &kp F5                         &kp F6          &kp F7           &kp F8     &kp F9                &kp F10                &kp F11
-&kp LS(GRAVE)  &kp EXCL  &kp AT  &kp HASH  &kp DOLLAR        &kp PERCENT                    &kp CARET       &kp AMPERSAND    &kp ASTRK  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp EQUAL
-&none          &none     &none   &none     &kp LEFT_BRACKET  &kp RIGHT_BRACKET              &kp LEFT_BRACE  &kp RIGHT_BRACE  &none      &kp F12               &kp INTERNATIONAL_3    &kp RS(EQUAL)
+&kp LS(GRAVE)  &kp EXCL  &kp AT  &kp HASH  &kp DOLLAR        &kp PERCENT                    &kp CARET       &kp AMPERSAND    &kp ASTRK  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &trans
+&none          &none     &none   &none     &kp LEFT_BRACKET  &kp RIGHT_BRACKET              &kp LEFT_BRACE  &kp RIGHT_BRACE  &none      &kp F12               &kp INTERNATIONAL_3    &trans
 &trans         &trans    &trans  &trans    &trans                                   &trans  &trans                                                                                   &kp INTERNATIONAL_1
             >;
         };
@@ -138,10 +138,10 @@
         mouse_layer {
             label = "MOUSE";
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans              &trans         &trans     &trans         &trans     &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans              &kp PAGE_UP    &mkp LCLK  &Mouse_double  &mkp RCLK  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans              &kp PAGE_DOWN  &trans     &trans         &trans     &trans  &trans
-&trans  &trans  &trans  &trans  &trans              &trans  &trans                                                      &trans
+&trans  &trans  &trans     &trans         &trans     &trans              &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans     &trans         &trans     &trans              &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans     &trans         &trans     &trans              &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &mkp LCLK  &Mouse_double  &mkp RCLK              &trans  &trans                                  &trans
             >;
         };
 
