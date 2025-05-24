@@ -56,14 +56,14 @@
     };
 
     macros {
-        macro1: macro1 {
+        macro_ID: macro1 {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings = <&kp N9 &kp N0 &kp N0 &kp N4 &kp N0 &kp N5 &kp N0 &kp N4 &kp N7 &kp N3 &kp TAB>;
             label = "MACRO1";
         };
 
-        macro2: macro2 {
+        macro_P: macro2 {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings = <&kp N0 &kp N7 &kp N4 &kp N8 &kp N7 &kp N7 &kp N5 &kp N9 &kp LS(B) &kp I &kp Y &kp O &kp U &kp G &kp A &kp RET>;
@@ -82,15 +82,34 @@
             label = "MOUSE_MACRO1";
         };
 
-        Mouse_macro2: Mouse_macro2 {
+        macro_hankaku_eng: macro_hankaku_eng {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&mkp RCLK &to 0>;
-            label = "MOUSE_MACRO2";
+            bindings = <&kp F9 &kp F8>;
+            label = "MACRO_HANKAKU_ENG";
+        };
+
+        macro_hankaku_kana: macro_hankaku_kana {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp F7 &kp F8>;
+            label = "MACRO_HANKAKU_KANA";
         };
     };
 
-    combos { compatible = "zmk,combos"; };
+    combos {
+        compatible = "zmk,combos";
+
+        combo_hankaku_eng {
+            bindings = <&macro_hankaku_eng>;
+            key-positions = <8 9>;
+        };
+
+        combo_hankaku_kana {
+            bindings = <&macro_hankaku_kana>;
+            key-positions = <7 8>;
+        };
+    };
 
     keymap {
         compatible = "zmk,keymap";
@@ -98,10 +117,10 @@
         default_layer {
             label = "QWRT";
             bindings = <
-&lt 4 ESCAPE          &kp Q             &kp W            &kp E        &kp R         &kp T               &kp Y            &kp U  &kp I      &kp O    &kp P      &kp MINUS
-&mt LCTRL LANGUAGE_2  &kp A             &kp S            &kp D        &kp F         &kp G               &kp H            &kp J  &kp K      &kp L    &kp SEMI   &mt RCTRL EQUAL
-&mt LSHIFT TAB        &kp Z             &kp X            &kp C        &kp V         &kp B               &kp N            &kp M  &kp COMMA  &kp DOT  &kp SLASH  &mt RSHIFT APOS
-&mt LGUI HOME         &mt LEFT_ALT END  &lt 5 LA(GRAVE)  &lt 1 SPACE  &lt 3 DELETE             &kp RET  &lt 3 BACKSPACE                                        &lt 2 BACKSLASH
+&lt 4 ESCAPE          &kp Q             &kp W            &kp E        &kp R       &kp T               &kp Y            &kp U  &kp I      &kp O    &kp P      &kp MINUS
+&mt LCTRL LANGUAGE_2  &kp A             &kp S            &kp D        &kp F       &kp G               &kp H            &kp J  &kp K      &kp L    &kp SEMI   &mt RCTRL EQUAL
+&mt LSHIFT TAB        &kp Z             &kp X            &kp C        &kp V       &kp B               &kp N            &kp M  &kp COMMA  &kp DOT  &kp SLASH  &mt RSHIFT DELETE
+&mt LGUI HOME         &mt LEFT_ALT END  &lt 5 LA(GRAVE)  &lt 1 SPACE  &lt 3 APOS             &kp RET  &lt 3 BACKSPACE                                        &lt 2 BACKSLASH
             >;
         };
 
@@ -118,10 +137,10 @@
         symbol_layer {
             label = "SYM";
             bindings = <
-&none  &none       &none         &none         &none         &none              &none    &none    &none  &none  &kp RA(F11)  &kp RC(PAUSE_BREAK)
-&none  &bt BT_CLR  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &none              &none    &none    &none  &none  &none        &none
-&none  &none       &none         &none         &none         &none              &macro1  &macro2  &none  &none  &none        &kp LA(LC(DELETE))
-&none  &none       &trans        &trans        &trans                   &trans  &trans                                       &trans
+&none  &none       &none         &none         &none         &none              &none      &none     &none  &kp PRINTSCREEN  &kp RA(F11)  &kp RC(PAUSE_BREAK)
+&none  &bt BT_CLR  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &none              &none      &none     &none  &none            &none        &none
+&none  &none       &none         &none         &none         &none              &macro_ID  &macro_P  &none  &none            &none        &kp LA(LC(DELETE))
+&none  &none       &trans        &trans        &trans                   &trans  &trans                                                    &trans
             >;
         };
 
