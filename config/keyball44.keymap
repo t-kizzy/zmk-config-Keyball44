@@ -109,6 +109,11 @@
             bindings = <&macro_hankaku_kana>;
             key-positions = <7 8>;
         };
+
+        combo_double_click {
+            bindings = <&Mouse_double>;
+            key-positions = <36 37>;
+        };
     };
 
     keymap {
@@ -137,10 +142,10 @@
         symbol_layer {
             label = "SYM";
             bindings = <
-&none  &none       &none         &none         &none         &none              &none      &none     &none  &kp PRINTSCREEN  &kp RA(F11)  &kp RC(PAUSE_BREAK)
-&none  &bt BT_CLR  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &none              &none      &none     &none  &none            &none        &none
-&none  &none       &none         &none         &none         &none              &macro_ID  &macro_P  &none  &none            &none        &kp LA(LC(DELETE))
-&none  &none       &trans        &trans        &trans                   &trans  &trans                                                    &trans
+&none  &none  &none   &none   &none   &none              &none       &none         &none         &kp PRINTSCREEN  &kp RA(F11)  &kp RC(PAUSE_BREAK)
+&none  &none  &none   &none   &none   &none              &bt BT_CLR  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2     &none        &none
+&none  &none  &none   &none   &none   &none              &macro_ID   &macro_P      &none         &none            &none        &kp LA(LC(DELETE))
+&none  &none  &trans  &trans  &trans             &trans  &trans                                                                &trans
             >;
         };
 
