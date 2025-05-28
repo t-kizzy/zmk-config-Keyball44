@@ -95,6 +95,27 @@
             bindings = <&kp F7 &kp F8>;
             label = "MACRO_HANKAKU_KANA";
         };
+
+        macro_parenthesis: macro_parenthesis {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LEFT_PARENTHESIS &kp RIGHT_PARENTHESIS>;
+            label = "MACRO_PARENTHESIS";
+        };
+
+        macro_brace: macro_brace {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LEFT_BRACE &kp RIGHT_BRACE>;
+            label = "MACRO_BRACE";
+        };
+
+        macro_bracket: macro_bracket {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LEFT_BRACKET &kp RIGHT_BRACKET>;
+            label = "MACRO_BRACKET";
+        };
     };
 
     combos {
@@ -106,13 +127,28 @@
         };
 
         combo_hankaku_kana {
-            bindings = <&macro_hankaku_kana>;
+            bindings = <&macro_parenthesis>;
             key-positions = <7 8>;
         };
 
         combo_double_click {
             bindings = <&Mouse_double>;
             key-positions = <36 37>;
+        };
+
+        combo_parenthesis {
+            bindings = <&none>;
+            key-positions = <21 22>;
+        };
+
+        combo_brace {
+            bindings = <&macro_brace>;
+            key-positions = <30 31>;
+        };
+
+        combo_bracket {
+            bindings = <&macro_bracket>;
+            key-positions = <28 29>;
         };
     };
 
@@ -142,10 +178,10 @@
         symbol_layer {
             label = "SYM";
             bindings = <
-&none  &none  &none   &none   &none   &none              &none       &none         &none         &kp PRINTSCREEN  &kp RA(F11)  &kp RC(PAUSE_BREAK)
-&none  &none  &none   &none   &none   &none              &bt BT_CLR  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2     &none        &none
-&none  &none  &none   &none   &none   &none              &macro_ID   &macro_P      &none         &none            &none        &kp LA(LC(DELETE))
-&none  &none  &trans  &trans  &trans             &trans  &trans                                                                &trans
+&none  &none  &none            &none   &none   &none                            &none       &none         &none         &none         &none               &kp RA(F11)
+&none  &none  &kp PRINTSCREEN  &none   &none   &none                            &bt BT_CLR  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &none               &none
+&none  &none  &none            &none   &none   &kp LC(PAUSE_BREAK)              &macro_ID   &macro_P      &none         &none         &kp LA(LC(DELETE))  &none
+&none  &none  &trans           &trans  &trans                           &trans  &trans                                                                    &trans
             >;
         };
 
@@ -162,10 +198,10 @@
         mouse_layer {
             label = "MOUSE";
             bindings = <
-&trans     &trans     &trans  &trans  &trans  &trans              &trans  &trans     &trans         &trans     &trans  &trans
-&trans     &trans     &trans  &trans  &trans  &trans              &trans  &mkp LCLK  &Mouse_double  &mkp RCLK  &trans  &trans
-&trans     &trans     &trans  &trans  &trans  &trans              &trans  &trans     &trans         &trans     &trans  &trans
-&mkp LCLK  &mkp RCLK  &trans  &trans  &trans              &trans  &trans                                               &trans
+&trans     &trans     &trans  &trans  &trans  &trans              &trans  &trans  &trans  &trans  &trans  &trans
+&trans     &trans     &trans  &trans  &trans  &trans              &trans  &trans  &trans  &trans  &trans  &trans
+&trans     &trans     &trans  &trans  &trans  &trans              &trans  &trans  &trans  &trans  &trans  &trans
+&mkp LCLK  &mkp RCLK  &trans  &trans  &trans              &trans  &trans                                  &trans
             >;
         };
 
