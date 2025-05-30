@@ -127,7 +127,7 @@
         };
 
         combo_hankaku_kana {
-            bindings = <&macro_parenthesis>;
+            bindings = <&macro_hankaku_kana>;
             key-positions = <7 8>;
         };
 
@@ -198,10 +198,10 @@
         mouse_layer {
             label = "MOUSE";
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans              &trans  &trans     &trans         &trans     &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans              &trans  &mkp LCLK  &Mouse_double  &mkp RCLK  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans              &trans  &trans     &trans         &trans     &trans  &trans
-&trans  &trans  &trans  &trans  &trans              &trans  &trans                                               &trans
+&trans     &trans     &trans  &trans  &trans  &trans              &trans  &trans     &trans         &trans     &trans  &trans
+&trans     &trans     &trans  &trans  &trans  &trans              &trans  &mkp LCLK  &Mouse_double  &mkp RCLK  &trans  &trans
+&trans     &trans     &trans  &trans  &trans  &trans              &trans  &trans     &trans         &trans     &trans  &trans
+&mkp LCLK  &mkp RCLK  &trans  &trans  &trans              &trans  &trans                                               &trans
             >;
         };
 
