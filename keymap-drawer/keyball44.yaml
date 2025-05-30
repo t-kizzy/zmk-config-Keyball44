@@ -217,8 +217,8 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
+  - $$mdi:mouse-left-click-outline$$
+  - $$mdi:mouse-right-click-outline$$
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
@@ -319,7 +319,7 @@ combos:
 - p: [8, 9]
   k: '&macro_hankaku_eng'
 - p: [7, 8]
-  k: '&macro_parenthesis'
+  k: '&macro_hankaku_kana'
 - p: [36, 37]
   k: '&Mouse_double'
 - p: [21, 22]
