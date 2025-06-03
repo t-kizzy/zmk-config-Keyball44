@@ -158,10 +158,10 @@
         default_layer {
             label = "QWRT";
             bindings = <
-&lt 4 ESCAPE    &kp Q             &kp W               &kp E        &kp R       &kp T               &kp Y            &kp U  &kp I      &kp O    &kp P      &kp MINUS
-&kp LCTRL       &kp A             &kp S               &kp D        &kp F       &kp G               &kp H            &kp J  &kp K      &kp L    &kp SEMI   &mt RCTRL EQUAL
-&mt LSHIFT TAB  &kp Z             &kp X               &kp C        &kp V       &kp B               &kp N            &kp M  &kp COMMA  &kp DOT  &kp SLASH  &mt RSHIFT DELETE
-&mt LGUI HOME   &mt LEFT_ALT END  &lt 5 LS(CAPSLOCK)  &lt 1 SPACE  &lt 3 APOS             &kp RET  &lt 3 BACKSPACE                                        &lt 2 BACKSLASH
+&lt 4 ESCAPE          &kp Q             &kp W             &kp E        &kp R       &kp T               &kp Y            &kp U  &kp I      &kp O    &kp P      &kp MINUS
+&mt LCTRL LANGUAGE_2  &kp A             &kp S             &kp D        &kp F       &kp G               &kp H            &kp J  &kp K      &kp L    &kp SEMI   &mt RCTRL EQUAL
+&mt LSHIFT TAB        &kp Z             &kp X             &kp C        &kp V       &kp B               &kp N            &kp M  &kp COMMA  &kp DOT  &kp SLASH  &mt RSHIFT DELETE
+&mt LGUI HOME         &mt LEFT_ALT END  &lt 5 LANGUAGE_1  &lt 1 SPACE  &lt 3 APOS             &kp RET  &lt 3 BACKSPACE                                        &lt 2 BACKSLASH
             >;
         };
 
