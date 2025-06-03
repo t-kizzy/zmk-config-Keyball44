@@ -13,7 +13,7 @@ layers:
   - O
   - P
   - {t: '-', s: _}
-  - $$mdi:apple-keyboard-control$$
+  - {t: LANGUAGE 2, h: '$$mdi:apple-keyboard-control$$'}
   - A
   - S
   - D
@@ -39,7 +39,7 @@ layers:
   - {t: '$$mdi:backspace-reverse-outline$$', h: '$$mdi:apple-keyboard-shift$$'}
   - {t: HOME, h: LGUI}
   - {t: END, h: '$$mdi:apple-keyboard-option$$'}
-  - {t: 'Sft+$$mdi:apple-keyboard-caps$$', h: SCROLL}
+  - {t: LANGUAGE 1, h: SCROLL}
   - {t: '$$mdi:keyboard-space$$', h: NUM}
   - {t: ., h: FUN}
   - {t: '$$mdi:keyboard-return$$', type: enter}
