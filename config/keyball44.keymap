@@ -168,20 +168,20 @@
         default_layer {
             label = "QWRT";
             bindings = <
-&mt LEFT_GUI ESCAPE  &kp Q      &kp W            &kp E        &kp R       &kp T               &kp Y                    &kp U  &kp I      &kp O    &kp P      &kp MINUS
-&kp LCTRL            &kp A      &kp S            &kp D        &kp F       &kp G               &kp H                    &kp J  &kp K      &kp L    &kp SEMI   &mt RCTRL EQUAL
-&mt LSHIFT TAB       &kp Z      &kp X            &kp C        &kp V       &kp B               &kp N                    &kp M  &kp COMMA  &kp DOT  &kp SLASH  &mt RSHIFT DELETE
-&mkp LCLK            &mkp RCLK  &lt 5 LC(SPACE)  &lt 1 SPACE  &lt 3 APOS             &kp RET  &mt RIGHT_ALT BACKSPACE                                        &lt 2 BACKSLASH
+&mt LEFT_GUI ESCAPE  &kp Q      &kp W          &kp E        &kp R       &kp T               &kp Y                    &kp U  &kp I      &kp O    &kp P      &kp MINUS
+&lt 5 LC(SPACE)      &kp A      &kp S          &kp D        &kp F       &kp G               &kp H                    &kp J  &kp K      &kp L    &kp SEMI   &mt RCTRL EQUAL
+&mt LSHIFT GRAVE     &kp Z      &kp X          &kp C        &kp V       &kp B               &kp N                    &kp M  &kp COMMA  &kp DOT  &kp SLASH  &mt RSHIFT DELETE
+&mkp LCLK            &mkp RCLK  &mt LCTRL TAB  &lt 1 SPACE  &lt 3 APOS             &kp RET  &mt RIGHT_ALT BACKSPACE                                        &lt 2 BACKSLASH
             >;
         };
 
         number_layer {
             label = "NUM";
             bindings = <
-&none           &none      &none      &kp UP_ARROW  &none      &none              &none            &kp KP_N7        &kp KP_N8  &kp KP_N9  &kp KP_DIVIDE  &kp KP_ASTERISK
-&kp KP_NUMLOCK  &none      &kp LEFT   &kp DOWN      &kp RIGHT  &none              &none            &kp KP_N4        &kp KP_N5  &kp KP_N6  &kp KP_PLUS    &kp KP_MINUS
-&none           &kp LC(Z)  &kp LC(X)  &kp LC(C)     &kp LC(V)  &none              &kp KP_DOT       &kp KP_NUMBER_1  &kp KP_N2  &kp KP_N3  &kp KP_EQUAL   &trans
-&trans          &trans     &trans     &trans        &trans                &trans  &kp KP_NUMBER_0                                                        &trans
+&none           &none   &none     &kp UP_ARROW  &none      &none              &none            &kp KP_N7        &kp KP_N8  &kp KP_N9  &kp KP_DIVIDE  &kp KP_ASTERISK
+&kp KP_NUMLOCK  &none   &kp LEFT  &kp DOWN      &kp RIGHT  &none              &none            &kp KP_N4        &kp KP_N5  &kp KP_N6  &kp KP_PLUS    &kp KP_MINUS
+&none           &none   &none     &none         &none      &none              &kp KP_DOT       &kp KP_NUMBER_1  &kp KP_N2  &kp KP_N3  &kp KP_EQUAL   &trans
+&trans          &trans  &trans    &trans        &trans                &trans  &kp KP_NUMBER_0                                                        &trans
             >;
         };
 
@@ -208,10 +208,10 @@
         mouse_layer {
             label = "MOUSE";
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans              &trans  &trans     &trans         &trans     &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans              &trans  &mkp LCLK  &Mouse_double  &mkp RCLK  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans              &trans  &trans     &trans         &trans     &trans  &trans
-&trans  &trans  &trans  &trans  &trans              &trans  &trans                                               &trans
+&trans  &trans  &trans  &trans  &trans  &trans              &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans              &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans              &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans              &trans  &trans                                  &trans
             >;
         };
 
