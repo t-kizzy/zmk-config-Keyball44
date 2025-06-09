@@ -59,11 +59,11 @@ layers:
   - KP DIVIDE
   - KP ASTERISK
   - KP NUMLOCK
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - HOME
   - $$mdi:arrow-left-bold$$
   - $$mdi:arrow-down-bold$$
   - $$mdi:arrow-right-bold$$
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - END
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - KP 4
   - KP 5
@@ -328,7 +328,3 @@ combos:
   k: '&macro_brace'
 - p: [28, 29]
   k: '&macro_bracket'
-- p: [14, 15]
-  k: HOME
-- p: [15, 16]
-  k: END
