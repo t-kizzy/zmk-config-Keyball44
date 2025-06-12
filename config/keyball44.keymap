@@ -131,11 +131,6 @@
             key-positions = <7 8>;
         };
 
-        combo_double_click {
-            bindings = <&Mouse_double>;
-            key-positions = <36 37>;
-        };
-
         combo_parenthesis {
             bindings = <&macro_parenthesis>;
             key-positions = <21 22>;
@@ -178,10 +173,10 @@
         symbol_layer {
             label = "SYM";
             bindings = <
-&none  &none  &none            &none   &none   &none                            &none               &none         &none         &none         &none  &kp RA(F11)
-&none  &none  &kp PRINTSCREEN  &none   &none   &none                            &bt BT_CLR          &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &none  &none
-&none  &none  &none            &none   &none   &kp LC(PAUSE_BREAK)              &macro_ID           &macro_P      &none         &none         &none  &none
-&none  &none  &trans           &trans  &trans                           &trans  &kp LA(LC(DELETE))                                                   &none
+&none  &none  &none            &none   &none   &none                            &none       &none         &none         &none         &none  &kp RA(F11)
+&none  &none  &kp PRINTSCREEN  &none   &none   &none                            &bt BT_CLR  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &none  &none
+&none  &none  &none            &none   &none   &kp LC(PAUSE_BREAK)              &macro_ID   &macro_P      &none         &none         &none  &none
+&none  &none  &trans           &trans  &trans                           &trans  &trans                                                       &kp RA(RC(DELETE))
             >;
         };
 
@@ -208,10 +203,10 @@
         scroll_layer {
             label = "SCROLL";
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans              &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans              &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans              &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans              &trans  &trans                                  &trans
+&trans         &trans  &trans  &trans  &trans  &trans              &trans  &trans  &trans  &trans  &trans  &trans
+&trans         &trans  &trans  &trans  &trans  &trans              &trans  &trans  &trans  &trans  &trans  &trans
+&trans         &trans  &trans  &trans  &trans  &trans              &trans  &trans  &trans  &trans  &trans  &trans
+&Mouse_double  &trans  &trans  &trans  &trans              &trans  &trans                                  &trans
             >;
         };
 
