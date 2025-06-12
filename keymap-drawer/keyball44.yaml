@@ -133,8 +133,8 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {type: held}
-  - Alt+Ctl+$$mdi:backspace-reverse-outline$$
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - AltGr+Ctl+$$mdi:backspace-reverse-outline$$
   FUN:
   - {t: '`', s: '~'}
   - F1
@@ -262,7 +262,7 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
+  - '&Mouse_double'
   - {t: '$$mdi:transfer$$', type: trans}
   - {type: held}
   - {t: '$$mdi:transfer$$', type: trans}
@@ -320,8 +320,6 @@ combos:
   k: '&macro_hankaku_eng'
 - p: [7, 8]
   k: '&macro_hankaku_kana'
-- p: [36, 37]
-  k: '&Mouse_double'
 - p: [21, 22]
   k: '&macro_parenthesis'
 - p: [30, 31]
