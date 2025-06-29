@@ -24,7 +24,7 @@ layers:
   - K
   - L
   - {t: ;, s: ':'}
-  - {t: '=', h: '$$mdi:apple-keyboard-control$$', s: +}
+  - RETURN
   - {t: '$$mdi:keyboard-tab$$', h: '$$mdi:apple-keyboard-shift$$'}
   - Z
   - X
@@ -42,7 +42,7 @@ layers:
   - {t: 'Ctl+$$mdi:keyboard-space$$', h: SCROLL}
   - {t: '$$mdi:keyboard-space$$', h: NUM}
   - {t: ., h: FUN}
-  - {t: RETURN, h: SYM}
+  - {t: '$$mdi:keyboard-space$$', h: SYM}
   - {t: '$$mdi:backspace$$', type: backspace}
   - {t: \, h: '$$mdi:apple-keyboard-option$$', s: '|'}
   NUM:
@@ -159,7 +159,7 @@ layers:
   - '*'
   - (
   - )
-  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '=', s: +}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
@@ -171,7 +171,7 @@ layers:
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - F12
   - INTERNATIONAL 3
-  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: Sft+=, s: Sft++}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
