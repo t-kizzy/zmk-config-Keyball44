@@ -24,7 +24,7 @@ layers:
   - K
   - L
   - {t: ;, s: ':'}
-  - RETURN
+  - {t: '=', s: +}
   - {t: '$$mdi:keyboard-tab$$', h: '$$mdi:apple-keyboard-shift$$'}
   - Z
   - X
@@ -42,7 +42,7 @@ layers:
   - {t: 'Ctl+$$mdi:keyboard-space$$', h: SCROLL}
   - {t: '$$mdi:keyboard-space$$', h: NUM}
   - {t: ., h: FUN}
-  - {t: '$$mdi:keyboard-space$$', h: SYM}
+  - {t: RETURN, h: SYM}
   - {t: '$$mdi:backspace$$', type: backspace}
   - {t: \, h: '$$mdi:apple-keyboard-option$$', s: '|'}
   NUM:
