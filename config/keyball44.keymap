@@ -116,6 +116,13 @@
             bindings = <&kp LEFT_BRACKET &kp RIGHT_BRACKET>;
             label = "MACRO_BRACKET";
         };
+
+        macro_mail: macro_mail {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp T &kp MINUS &kp K &kp I &kp Z &kp Z &kp Y &kp AT &kp O &kp U &kp T &kp L &kp O &kp O &kp K &kp DOT &kp C &kp O &kp M &kp TAB>;
+            label = "MACRO_MAIL";
+        };
     };
 
     combos {
@@ -144,6 +151,11 @@
         combo_bracket {
             bindings = <&macro_bracket>;
             key-positions = <28 29>;
+        };
+
+        mouse_double_click {
+            bindings = <&Mouse_double>;
+            key-positions = <36 37>;
         };
     };
 
@@ -175,7 +187,7 @@
             bindings = <
 &none  &none  &none            &none   &none   &none                            &none       &none         &none         &none         &none  &kp RA(F11)
 &none  &none  &kp PRINTSCREEN  &none   &none   &none                            &bt BT_CLR  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &none  &none
-&none  &none  &none            &none   &none   &kp LC(PAUSE_BREAK)              &macro_ID   &macro_P      &none         &none         &none  &none
+&none  &none  &none            &none   &none   &kp LC(PAUSE_BREAK)              &macro_ID   &macro_P      &macro_mail   &none         &none  &none
 &none  &none  &trans           &trans  &trans                           &trans  &trans                                                       &kp RA(RC(DELETE))
             >;
         };
