@@ -123,7 +123,7 @@ layers:
   - Ctl+PAUSE BREAK
   - '&macro_ID'
   - '&macro_P'
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - '&macro_mail'
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
@@ -326,3 +326,5 @@ combos:
   k: '&macro_brace'
 - p: [28, 29]
   k: '&macro_bracket'
+- p: [36, 37]
+  k: '&Mouse_double'
