@@ -120,7 +120,7 @@
         macro_mail: macro_mail {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp T &kp MINUS &kp K &kp I &kp Z &kp Z &kp Y &kp AT &kp O &kp U &kp T &kp L &kp O &kp O &kp K &kp DOT &kp C &kp O &kp M &kp TAB>;
+            bindings = <&kp T &kp E &kp R &kp U &kp Y &kp U &kp K &kp I &kp DOT &kp B &kp DOT &kp K &kp I &kp J &kp I &kp M &kp A &kp AT &kp S &kp O &kp N &kp Y &kp DOT &kp C &kp O &kp M &kp TAB>;
             label = "MACRO_MAIL";
         };
     };
